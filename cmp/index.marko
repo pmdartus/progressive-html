@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello Marko</title>
+  </head>
+  <body>
+    <h1>Hello ${data.name}</h1>
+
+    <p>
+        <app-hello name="${data.name}"/> You have ${data.count} new messages!
+    </p>
+
+    <ul if="notEmpty(data.colors)">
+        <li style="color: $color" for="color in data.colors">
+            $color
+        </li>
+    </ul>
+
+  </body>
+</html>
